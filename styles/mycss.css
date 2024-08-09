@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body
+{
+    font-family: Michroma, serif;
+    background: linear-gradient(90deg, #1d018c 0%, #010002 100%);
+}
+
+.nav-link
+{
+    color: rgb(235, 238, 237);
+}
+
+.navbar-nav .nav-link.active
+{
+    color: rgb(151, 151, 151);
+}
+
+.navbar-brand img
+{
+    width: 40px;
+}
+
+.navbar-toggler 
+{
+    background-color:rgb(19, 154, 154);
+}
+
+.sidebar
+{
+    color: aquamarine;
+    background: linear-gradient(270deg, #1f0499 0%, #0d0027 100%);
+}
+
+.card
+{
+    background: linear-gradient(270deg, #1f0499 0%, #0d0027 100%);
+}
+
+.card a
+{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.slide-text
+{
+    color: aquamarine;
+    margin: auto auto; /*и по x и по y задает центральное положение*/
+}
+
+@media (max-width:755)
+{
+    .carousel-indicators
+    {
+        display: none; /*на мобильных устройствах не будет отображаться нижняя панель, тк она наслаивается на текст*/
+    }
+}
+
+.footer-text
+{
+    color: aquamarine;
+    margin: auto auto; /*и по x и по y задает центральное положение*/
+}
+
+footer
+{
+    background: linear-gradient(270deg, #1f0499 0%, #0d0027 100%);
+}
+
+.media-links
+{
+    display: flex;
+    justify-content: center; /*по горизонтали*/
+    align-items: center; /*по вертикали*/
+}
+
+p
+{
+    color: aquamarine;
+}
+
+.call
+{
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+.btn-outline-primary
+{
+    background: linear-gradient(270deg, #1f0499 0%, #0d0027 100%);
+}
